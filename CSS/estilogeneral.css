@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    padding-top: 130px; /* Compensación para header fijo + selector de idioma */
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    background-color: #114B5F;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.activo {
+    background-color: #C4E865;
+    border-radius: 5px;
+    color: #114B5F !important;
+    box-shadow: 0 0 10px rgba(196, 232, 101, 0.5);
+}
+
+.activo:hover {
+    box-shadow: 0 0 15px rgba(196, 232, 101, 0.8);
+}
+
+.logo img {
+    transition: transform 0.4s ease-out;
+    display: block;
+}
+
+.logo img:hover {
+    transform: rotate(5deg) scale(1.1);
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #C4E865;
+}
+
+.nav-principal ul {
+    list-style: none;
+    display: flex;
+}
+
+.item-nav {
+    margin-left: 25px;
+}
+
+.nav-principal a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    transition: color 0.3s ease, border-bottom 0.3s ease, background-color 0.3s, box-shadow 0.3s;
+    font-family: "Tektur", sans-serif;
+}
+
+.nav-principal a:hover:not(.btn-cta) {
+    color: #C4E865;
+    border-bottom: 3px solid #C4E865;
+}
+
+.btn-cta-secundario:hover {
+    background-color: #C4E865;
+    transform: translateY(-2px);
+    color: #114B5F !important;
+}
+
+.language-selector {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 10px 5%;
+    margin: 0;
+    position: fixed;
+    top: 100px;
+    right: 0;
+    z-index: 999;
+    border-radius: 0 0 0 15px;
+}
+
+.language-selector li a {
+    text-decoration: none;
+    color: #114B5F;
+    font-family: "Tektur", sans-serif;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 2px solid #114B5F;
+    transition: all 0.3s ease;
+}
+
+.language-selector li .idioma-activo {
+    background-color: #C4E865;
+    color: #114B5F;
+    border-color: #C4E865;
+}
+
+.language-selector li .idioma-no-activo:hover {
+    background-color: #114B5F;
+    color: white;
+    cursor: pointer;
+}
+
+.language-selector li .idioma-activo:hover {
+    background-color: #114B5F;
+    color: #C4E865;
+    cursor: pointer;
+}
