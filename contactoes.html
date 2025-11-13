@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Almingo S.L.</title>
+    <link rel="stylesheet" href="CSS/estilogeneral.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" width="50px" alt="">
+        </div>
+        <nav class="nav-principal">
+            <ul>
+                <li class="item-nav"><a href="indexes.html">Inicio</a></li>
+                <li class="item-nav"><a href="servicios.html">Servicios</a></li>
+                <li class="item-nav"><a href="aboutuses.html">Sobre Nosotros</a></li>
+                <li class="item-nav"><a href="proyectoses.html">Proyectos</a></li>
+                <li class="item-nav"><a href="tecnologiases.html">Tecnologías</a></li>
+                <li class="item-nav"><a href="contactoes.html" class="activo">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <nav>
+            <ul class="language-selector">
+                <li>
+                    <a href="contacto.html" data-lang="en" class="idioma-no-activo">English</a>
+                </li>
+                <li>
+                    <a href="contactoes.html" data-lang="es" class="idioma-activo">Español</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section id="hero">
+            <h2>Ponte en Contacto con Nosotros</h2>
+            <p>Hablemos de tu proyecto y convirtamos tus ideas en realidad</p>
+            <a href="#contacto" class="btn-cta-principal"><strong>¡Comienza tu Proyecto Hoy!</strong></a>
+        </section>
+
+        <section id="servicios">
+            <h2>¿Por Qué Trabajar con Nosotros?</h2>
+
+            <div class="contenedor-servicios">
+
+                <article>
+                    <h3>Respuesta Rápida</h3>
+                    <br>
+                    <p>Entendemos que el tiempo es valioso. Nuestro equipo responde a las consultas con prontitud, asegurando que obtengas
+                        la información que necesitas cuando la necesitas.</p>
+                </article>
+
+                <article>
+                    <h3>Consulta Gratuita</h3>
+                    <br>
+                    <p>Programa una consulta gratuita para discutir los requisitos de tu proyecto, presupuesto y cronograma. Proporcionaremos
+                        consejos honestos y recomendaciones prácticas.</p>
+                </article>
+
+                <article>
+                    <h3>Proceso Transparente</h3>
+                    <br>
+                    <p>Desde el contacto inicial hasta la finalización del proyecto, mantenemos comunicación clara y transparencia
+                        sobre cada paso del proceso de desarrollo.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Envíanos los Detalles de tu Proyecto</h2>
+
+            <div class="contenedor-contacto">
+                <div>
+                    <form id="formularioProyecto">
+                        <div class="grupo-formulario">
+                            <label for="nombre">Nombre y Empresa</label>
+                            <input type="text" id="nombre" name="nombre" required
+                                placeholder="Ej: Juan Pérez - Soluciones Tecnológicas">
+                        </div>
+
+                        <div class="grupo-formulario">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                        </div>
+
+                        <div class="grupo-formulario">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="+34 111 222 333">
+                        </div>
+
+                        <div class="grupo-formulario">
+                            <label for="idea">¿Cuál es tu idea?</label>
+                            <textarea id="idea" name="idea" required
+                                placeholder="Describe brevemente lo que quieres desarrollar y qué problema resuelve..."></textarea>
+                            <small>Cuéntanos qué necesitas y para quién es</small>
+                        </div>
+
+                        <div class="grupo-formulario">
+                            <label for="comentarios">Comentarios Adicionales</label>
+                            <textarea id="comentarios" name="comentarios"
+                                placeholder="Cualquier información adicional que quieras compartir..."></textarea>
+                        </div>
+
+                        <button type="submit" class="boton-enviar">Enviar Solicitud</button>
+                    </form>
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="AboutUs">
+            <h2>Otras Formas de Contactarnos</h2>
+
+            <div class="contenedor-AboutUs">
+
+                <article>
+                    <h3>Información de Contacto Directo</h3>
+                    <br>
+                    <p><strong>Email:</strong> los4dedam@gmail.com</p>
+                    <p>Siéntete libre de enviarnos un correo electrónico directamente. Revisamos nuestra bandeja de entrada regularmente y responderemos en 24 horas.</p>
+                    <br>
+                    <p><strong>Teléfono:</strong> +34 555 123 456</p>
+                    <p>¿Prefieres hablar? Llámanos durante el horario de oficina (Lunes-Viernes, 9:00 AM - 6:00 PM CET).</p>
+                    <br>
+                    <p><strong>GitHub:</strong> Revisa nuestros proyectos de código abierto y contribuciones en GitHub para ver
+                        nuestro código en acción.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="servicios">
+            <h2>¿Qué Sucede Después?</h2>
+
+            <div class="contenedor-servicios">
+
+                <article>
+                    <h3>1. Contacto Inicial</h3>
+                    <br>
+                    <p>Después de enviar tu solicitud, revisaremos los detalles de tu proyecto y te responderemos en 24
+                        horas para programar una consulta inicial.</p>
+                </article>
+
+                <article>
+                    <h3>2. Evaluación del Proyecto</h3>
+                    <br>
+                    <p>Discutiremos tus requisitos en detalle, entenderemos tus objetivos y proporcionaremos una evaluación
+                        preliminar del alcance, cronograma y presupuesto.</p>
+                </article>
+
+                <article>
+                    <h3>3. Propuesta e Inicio</h3>
+                    <br>
+                    <p>Si somos una buena opción, prepararemos una propuesta detallada. Una vez aprobada, comenzaremos el desarrollo
+                        y te mantendremos informado durante todo el proceso.</p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+    <div style="margin-bottom: 20px;"></div>
+    <footer>
+        <div class="footer-grid">
+
+            <div class="footer-column brand">
+                <img src="images/logo.png" alt="logo">
+                <p>Construimos soluciones de software escalables y de alto rendimiento que impulsan tu negocio digital.</p>
+            </div>
+
+
+            <div class="footer-column quick-links">
+                <h3>Enlaces Útiles</h3>
+                <ul>
+                    <li><a href="#projects">GitHub</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column contact-social">
+                <h3>Contáctanos</h3>
+                <p>Email: <a href="mailto:contact@company.com">los4dedam@gmail.com</a></p>
+                <p>Teléfono: +34 555 123 456</p>
+
+            </div>
+
+        </div>
+
+
+    </footer>
+</body>
+
+</html>
