@@ -6,9 +6,9 @@
 }
 
 body {
-    padding-top: 130px; /* Compensación para header fijo + selector de idioma */
+    padding-top: 130px;
     opacity: 0;
-    animation: fadeIn 0.8s ease-out forwards;
+    animation: fadeIn 0.8s ease-out forwards
 }
 
 @keyframes fadeIn {
@@ -136,8 +136,6 @@ header {
     font-family: Arial, sans-serif;
 }
 
-/* Body styles are now handled in estilogeneral.css */
-
 section {
     padding: 60px 5%;
     max-width: 1200px;
@@ -152,8 +150,6 @@ section {
     font-family: "Tektur", sans-serif;
     border-radius: 0px 20px 0px 20px;
 }
-
-
 
 #hero h2 {
     font-size: 2.5em;
@@ -179,6 +175,15 @@ section {
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
     font-family: "Tektur", sans-serif;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: iluminarse 5s infinite;
+}
+@keyframes iluminarse {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(196, 232, 101, 0.6);
+    }
+    50% {
+        box-shadow: 0 0 25px rgba(196, 232, 101, 1);
+    }
 }
 
 .btn-cta-principal:hover {
@@ -466,8 +471,6 @@ p {
     border-radius: 8px;
     flex: 1;
 }
-
-/* FOOTER*/
 
 footer {
     background-color: #114B5F;
